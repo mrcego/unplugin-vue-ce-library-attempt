@@ -1,0 +1,30 @@
+{
+  "name": "ce-ui-core",
+  "version": "0.0.11",
+  "description": "DEMO",
+  "type": "module",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ce-ui-core.umd.cjs",
+  "module": "./dist/ce-ui-core.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/ce-ui-core.js",
+      "require": "./dist/ce-ui-core.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --noEmit",
+    "preview": "vite preview",
+    "version-patch": "pnpm version patch",
+    "version-minor": "pnpm version minor",
+    "version-major": "pnpm version major",
+    "release": "pnpm publish"
+  }
+}
