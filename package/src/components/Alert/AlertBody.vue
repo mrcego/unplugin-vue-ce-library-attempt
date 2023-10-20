@@ -14,7 +14,7 @@ withDefaults(
     class="px-4 py-6 rounded-r-lg flex justify-between items-center w-full border border-l-transparent border-gray-200"
     :class="backgroundColor"
   >
-    <slot>
+    <slot name="default">
       <div>Default / info alert</div>
     </slot>
 
